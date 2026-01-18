@@ -21,7 +21,7 @@ export default function SearchBar() {
   };
 
   return (
-    <form onSubmit={handleSearch} className="bg-white rounded-lg shadow-xl p-6 max-w-5xl mx-auto -mt-10 relative z-10">
+    <form onSubmit={handleSearch} className="bg-white rounded-lg shadow-2xl p-6 max-w-5xl mx-auto -mt-28 relative z-10">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-2">

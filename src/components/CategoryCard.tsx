@@ -25,7 +25,7 @@ export default function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link
       to={`/tours?category=${category.name.toLowerCase()}`}
-      className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
+      className="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
     >
       <div className="flex justify-center mb-4">
         <div className="bg-[#F4B41A] bg-opacity-10 p-4 rounded-full">

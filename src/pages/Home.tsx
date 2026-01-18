@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative h-[600px] flex items-center justify-center">
+      <section className="relative h-[700px] flex items-center justify-center">
         <div className="absolute inset-0">
           <img
             src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1920"
@@ -31,11 +31,21 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-center text-white px-4 max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Explore the World with TravelWorld
+          {/*<h2 className="text-sm md:text-base uppercase tracking-widest text-[#F4B41A] mb-4">
+            Welcome to Indu Sri Lanka Travel Organization
+          </h2>*/}
+
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            Discover Hidden Retreats Across
+            <span className="block bg-gradient-to-r from-[#F4B41A] to-[#FFD166] bg-clip-text text-transparent">
+              Asia’s Most Majestic Destinations
+            </span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8">
-            Discover amazing destinations and create unforgettable memories
+
+          <p className="text-base md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
+            From flights and hotels to visas and international tours, we take care of everything.
+            Enjoy stress-free travel with transparent pricing, expert planning, and unforgettable
+            experiences - specially designed for Sri Lankan travelers.
           </p>
         </div>
       </section>
@@ -44,7 +54,7 @@ export default function Home() {
         <SearchBar />
       </div>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Tour Categories</h2>
