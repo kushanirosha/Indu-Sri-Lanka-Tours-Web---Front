@@ -1,0 +1,26 @@
+{
+    "navbar": {
+        "desc1": "Home",
+        "desc2": "Tours",
+        "desc3": "Visa",
+        "desc4": "Offers",
+        "desc5": "About",
+        "desc6": "Gallery",
+        "desc7": "Contact"
+    },
+    "topbar": {
+        "desc1": "Need a Help"
+    },
+    "footer": {
+        "desc1": "TravelWorld"
+    },
+    "mailling": {
+        "desc1": "Join Our Mailing Group & Get Updates",
+        "desc2": "Type your e-mail address ...",
+        "desc3": "Subscribe Now"
+    },
+
+    "home": {
+        
+    }
+}
