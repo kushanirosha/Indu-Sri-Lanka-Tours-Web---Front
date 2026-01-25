@@ -39,7 +39,7 @@ export default function About() {
     <div className="min-h-screen">
       <div className="bg-[#0B1C2D] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About TravelWorld</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Indu Sri Lanka Travels</h1>
           <p className="text-gray-300 text-lg">
             Your trusted partner in creating unforgettable travel experiences
           </p>
@@ -64,7 +64,7 @@ export default function About() {
           <div className="max-w-4xl mx-auto text-gray-700 space-y-4 leading-relaxed">
             <p>
               Founded with a passion for exploration and a commitment to exceptional service,
-              TravelWorld has been helping travelers discover the world for over 15 years.
+              Indu Sri Lanka Travels has been helping travelers discover the world for over 15 years.
             </p>
             <p>
               What started as a small travel agency has grown into a trusted name in the industry,
@@ -107,7 +107,7 @@ export default function About() {
 
         <div>
           <h2 className="text-3xl font-bold text-[#0B1C2D] mb-8 text-center">
-            Why Choose TravelWorld?
+            Why Choose Indu Sri Lanka Travels?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reasons.map((reason, index) => (

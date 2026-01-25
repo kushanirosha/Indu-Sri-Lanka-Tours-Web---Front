@@ -13,7 +13,7 @@ export default function Privacy() {
           <section>
             <h2 className="text-2xl font-bold text-[#0B1C2D] mb-4">Introduction</h2>
             <p className="text-gray-700 leading-relaxed">
-              TravelWorld is committed to protecting your privacy. This Privacy Policy explains how we collect,
+              Indu Sri Lanka Travels is committed to protecting your privacy. This Privacy Policy explains how we collect,
               use, disclose, and safeguard your information when you use our website and services.
             </p>
           </section>
@@ -56,7 +56,7 @@ export default function Privacy() {
           <section>
             <h2 className="text-2xl font-bold text-[#0B1C2D] mb-4">Contact Us</h2>
             <p className="text-gray-700 leading-relaxed">
-              If you have questions about this Privacy Policy, please contact us at privacy@travelworld.com
+              If you have questions about this Privacy Policy, please contact us at privacy@indusrilankatravels.com
             </p>
           </section>
         </div>

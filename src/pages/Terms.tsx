@@ -13,7 +13,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-bold text-[#0B1C2D] mb-4">Agreement to Terms</h2>
             <p className="text-gray-700 leading-relaxed">
-              By accessing and using TravelWorld's services, you agree to be bound by these Terms and Conditions.
+              By accessing and using Indu Sri Lanka Travels's services, you agree to be bound by these Terms and Conditions.
               If you disagree with any part of these terms, you may not access our services.
             </p>
           </section>
@@ -50,7 +50,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-bold text-[#0B1C2D] mb-4">Limitation of Liability</h2>
             <p className="text-gray-700 leading-relaxed">
-              TravelWorld acts as an intermediary between you and travel service providers. We are not
+              Indu Sri Lanka Travels acts as an intermediary between you and travel service providers. We are not
               liable for any issues arising from services provided by third parties.
             </p>
           </section>
@@ -58,7 +58,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-bold text-[#0B1C2D] mb-4">Contact Information</h2>
             <p className="text-gray-700 leading-relaxed">
-              For questions about these Terms and Conditions, please contact us at legal@travelworld.com
+              For questions about these Terms and Conditions, please contact us at legal@indusrilankatravels.com
             </p>
           </section>
         </div>

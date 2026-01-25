@@ -41,8 +41,8 @@ export default function Contact() {
               <Mail className="h-6 w-6 text-[#F4B41A]" />
             </div>
             <h3 className="text-xl font-bold text-[#0B1C2D] mb-2">Email</h3>
-            <p className="text-gray-600">info@travelworld.com</p>
-            <p className="text-gray-600">support@travelworld.com</p>
+            <p className="text-gray-600">info@indusrilankatravels.com</p>
+            <p className="text-gray-600">support@indusrilankatravels.com</p>
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">

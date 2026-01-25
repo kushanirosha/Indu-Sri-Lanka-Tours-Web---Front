@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-[#F4B41A]">TravelWorld</h3>
+            <h3 className="text-xl font-bold mb-4 text-[#F4B41A]">Indu Sri Lanka Travels</h3>
             <p className="text-gray-300 mb-4">
               Your trusted partner for unforgettable travel experiences around the world.
             </p>
@@ -102,7 +102,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-[#F4B41A] flex-shrink-0" />
-                <span className="text-gray-300">info@travelworld.com</span>
+                <span className="text-gray-300">info@indusrilankatravels.com</span>
               </li>
             </ul>
           </div>
@@ -110,7 +110,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} TravelWorld. All rights reserved.
+            &copy; {new Date().getFullYear()} Indu Sri Lanka Travels. All rights reserved.
           </p>
           <div className="mt-2 space-x-4">
             <Link to="/privacy" className="text-gray-400 hover:text-[#F4B41A] text-sm">
