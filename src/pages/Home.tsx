@@ -5,6 +5,9 @@ import DestinationCard from '../components/DestinationCard';
 import { categories, tours, destinations, experienceTypes } from '../data/travelData';
 import { Mail, Waves, Landmark, Trees, ShoppingBag, Building } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Locations from '../components/Locations';
+import logo from '../public/logo1.png'
+import ReviewsSection from '../components/ReviewsSection';
 
 const experienceIcons: { [key: string]: React.ElementType } = {
   Waves,
@@ -54,7 +57,63 @@ export default function Home() {
         <SearchBar />
       </div>
 
-      <section className="py-28">
+      <section className="py-20 md:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Logo */}
+          <div className="mb-8 flex justify-center">
+            <img
+              src={logo}
+              alt="Indu Sri Lanka Travels Logo"
+              className="h-24 md:h-32 w-auto object-contain"
+            />
+          </div>
+
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#0B1C2D] via-[#0E7490] to-[#F4B41A] bg-clip-text text-transparent mb-3">
+            Indu Sri Lanka Travels
+          </h1>
+
+          <hr className="border-t-1 border-gray-300  mb-10" />
+
+          {/* Description */}
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p className="text-lg font-bold">
+              Welcome to Indu Sri Lanka Travels!
+            </p>
+
+            <p>
+              Your trusted inbound and outbound travel agency with a remarkable 30-year legacy of excellence. We are your gateway to unforgettable journeys, specializing in Dambadiva tours and spiritual expeditions in the heart of Sri Lanka. With a deep-rooted commitment to providing immersive and spiritually enriching experiences, we invite you to embark on a voyage of discovery with us.
+            </p>
+
+            <p>
+              Discover the sacred wonders of cultural and spiritual heritage on our outbound pilgrimage tours, where we take you on a transformative journey like no other. Join us as we explore the soul of these holy destinations, one pilgrimage at a time.
+            </p>
+          </div>
+
+          {/* Button */}
+          <div className="mt-12">
+            <a
+              href="/about"
+              className="
+          inline-block
+          bg-[#F4B41A] hover:bg-[#e5a515]
+          text-black font-bold
+          text-lg px-12 py-3
+          rounded-xl
+          shadow-lg hover:shadow-xl
+          transition-all duration-300
+          transform hover:-translate-y-1
+        "
+            >
+              Explore More
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <Locations />
+
+      {/*<section className="py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Tour Categories</h2>
@@ -67,7 +126,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -145,6 +204,100 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+            {/* Left - Text Content */}
+            <div className="space-y-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1C2D] leading-tight">
+                Travel Within Your Budget –<br />
+                Sri Lanka's Best Value International Tours
+              </h2>
+
+              <div className="w-24 h-1 bg-[#F4B41A] rounded-full my-6"></div>
+
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Tell us how much you want to spend and we'll find the perfect international
+                options for you. Our budget specialists will help you get the most value for your
+                money. Zero hidden costs guaranteed!
+              </p>
+
+              <ul className="space-y-4 text-gray-800 text-lg">
+                <li className="flex items-center gap-3">
+                  <span className="text-green-600 text-2xl">✔</span>
+                  Customized budget-friendly international options
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-green-600 text-2xl">✔</span>
+                  Special deals within your price range
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-green-600 text-2xl">✔</span>
+                  No hidden costs or surprise fees
+                </li>
+              </ul>
+
+              {/* Budget Input + Button */}
+              {/*<div className="mt-10 flex flex-col sm:flex-row gap-4 max-w-md">
+                <div className="relative flex-1">
+                  <input
+                    type="number"
+                    placeholder="500000"
+                    className="
+                w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-full
+                focus:outline-none focus:border-[#F4B41A] focus:ring-2 focus:ring-[#F4B41A]/30
+                placeholder-gray-500
+              "
+                  />
+                  <span className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-500 font-medium">
+                    LKR
+                  </span>
+                </div>
+
+                <button
+                  className="
+              bg-[#F4B41A] hover:bg-[#e0a010] text-white font-semibold
+              text-lg px-10 py-4 rounded-full shadow-lg
+              transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl
+              flex items-center justify-center gap-2 min-w-[140px]
+            "
+                >
+                  <span>Search</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+              </div>*/}
+            </div>
+
+            {/* Right - Image */}
+            <div className="relative hidden lg:block">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img
+                  src="https://ejournalz.com/wp-content/uploads/2017/04/Travel-in-Budget.png"
+                  alt="Travel budget jar with money, compass and airplane"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Optional decorative elements */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#F4B41A]/20 rounded-full blur-2xl" />
+              <div className="absolute -top-6 -left-6 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl" />
+            </div>
+          </div>
+
+          {/* Mobile image - shown only on smaller screens */}
+          <div className="mt-12 lg:hidden">
+            <img
+              src="https://ejournalz.com/wp-content/uploads/2017/04/Travel-in-Budget.png"
+              alt="Travel budget jar with money, compass and airplane"
+              className="w-full rounded-2xl shadow-2xl object-cover border-4 border-white"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -159,6 +312,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ReviewsSection />
 
       <section className="py-16 bg-[#0B1C2D]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

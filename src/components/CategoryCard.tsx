@@ -19,6 +19,7 @@ const iconMap: { [key: string]: React.ElementType } = {
   Wallet,
 };
 
+
 export default function CategoryCard({ category }: CategoryCardProps) {
   const IconComponent = iconMap[category.icon];
 

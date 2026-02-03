@@ -34,6 +34,88 @@ export interface Category {
   description: string;
 }
 
+export interface Locations {
+  id: string;
+  name: string;
+  imageUrl: string;   
+  slug: string;         
+}
+
+export const popularDestinations: Locations[] = [
+  {
+    id: '1',
+    name: 'Goa Beaches',
+    imageUrl: 'https://www.shoreexcursionsgroup.com/img/tour/ASGOBEACHBEERTOUR-2.jpg',
+    slug: 'goa-beaches',
+  },
+  {
+    id: '2',
+    name: 'Taj Mahal, Agra',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg',
+    slug: 'taj-mahal-agra',
+  },
+  {
+    id: '3',
+    name: 'Jaipur Pink City',
+    imageUrl: 'https://www.pinkcityroyals.com/assets/images/jaipur-places-pics/Hawa_Mahal_jaipur_pinkcityroyals02.jpg',
+    slug: 'jaipur',
+  },
+  {
+    id: '4',
+    name: 'Kerala Backwaters',
+    imageUrl: 'https://mynatour.org/wp-content/uploads/2015/05/Houseboats_at_Kerala_Backwaters.jpg',
+    slug: 'kerala-backwaters',
+  },
+  {
+    id: '5',
+    name: 'Varanasi Ghats',
+    imageUrl: 'https://varanasismartcity.gov.in//assets/images/images/DashashwamedhGhat.jpg',
+    slug: 'varanasi',
+  },
+  {
+    id: '6',
+    name: 'Manali Hills',
+    imageUrl: 'https://www.tmthpl.com/wp-content/uploads/2023/12/shimla-manali-budget-tour-package.jpg',
+    slug: 'manali',
+  },
+  {
+    id: '7',
+    name: 'Ladakh Leh',
+    imageUrl: 'https://www.felixferiatravel.com/images/1736416900Leh_Ladakh_Image_(18).jpg',
+    slug: 'ladakh',
+  },
+  {
+    id: '8',
+    name: 'Rishikesh Yoga',
+    imageUrl: 'https://adisheshyoga.com/blog/images/rishikesh-yoga-retreat-featured-06.webp',
+    slug: 'rishikesh',
+  },
+  {
+    id: '9',
+    name: 'Udaipur Lakes',
+    imageUrl: 'https://udaipurtourism.co.in/images/places-to-visit/headers/lake-pichola-udaipur-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg',
+    slug: 'udaipur',
+  },
+  {
+    id: '10',
+    name: 'Andaman Islands',
+    imageUrl: 'https://www.andamanislands.com/uploads/andamanislands/blog/main/5fa4011d9f7f4152_how_to_reach_the_andaman_islands.jpeg',
+    slug: 'andaman-islands',
+  },
+  {
+    id: '11',
+    name: 'Darjeeling Tea',
+    imageUrl: 'https://teafloor.com/blog/wp-content/uploads/2021/04/Recipe-of-Darjeeling-Tea.jpeg',
+    slug: 'darjeeling',
+  },
+  {
+    id: '12',
+    name: 'Ayodhya Ram Temple',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Ram_Janmbhoomi_Mandir%2C_Ayodhya_Dham.jpg', // placeholder - use better one
+    slug: 'ayodhya',
+  },
+];
+
 export const categories: Category[] = [
   { id: '1', name: 'Honeymoon', icon: 'Heart', description: 'Romantic getaways for couples' },
   { id: '2', name: 'Family', icon: 'Users', description: 'Perfect trips for families' },
