@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 import Locations from '../components/Locations';
 import logo from '../public/logo1.png'
 import ReviewsSection from '../components/ReviewsSection';
+import WhyChooseUsSection from '../components/WhyChooseUsSection';
+import StatsSection from '../components/StatsSection';
 
 const experienceIcons: { [key: string]: React.ElementType } = {
   Waves,
@@ -128,7 +130,7 @@ export default function Home() {
         </div>
       </section>*/}
 
-      <section className="py-16">
+      <section className="py-24 mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Featured Group Tours</h2>
@@ -154,7 +156,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      {/*<section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Browse by Country</h2>
@@ -167,9 +169,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
-      <section className="py-16">
+      {/*<section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Adventure & Experiences</h2>
@@ -202,7 +204,7 @@ export default function Home() {
             })}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       <section className="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -298,7 +300,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <WhyChooseUsSection/>
+
+      <StatsSection/>
+
+      {/*<section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Popular Tours</h2>
@@ -311,7 +317,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       <ReviewsSection />
 

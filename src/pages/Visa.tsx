@@ -1,5 +1,6 @@
 import { Check, FileText, Clock, Shield, Globe } from 'lucide-react';
 import { visaCountries } from '../data/travelData';
+import BookingStepsSection from '../components/BookingStepsSection';
 
 export default function Visa() {
   const steps = [
@@ -60,7 +61,7 @@ export default function Visa() {
           ))}
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-8 mb-16">
+        {/*<div className="bg-gray-50 rounded-lg p-8 mb-16">
           <div className="flex items-center justify-center mb-6">
             <Globe className="h-12 w-12 text-[#F4B41A]" />
           </div>
@@ -77,7 +78,7 @@ export default function Visa() {
               </div>
             ))}
           </div>
-        </div>
+        </div>*/}
 
         <div className="bg-[#0B1C2D] text-white rounded-lg p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Apply?</h2>
@@ -92,6 +93,8 @@ export default function Visa() {
           </a>
         </div>
       </div>
+
+      <BookingStepsSection/>
     </div>
   );
 }

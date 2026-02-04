@@ -86,7 +86,7 @@ const ReviewsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0B1C2D] mb-4">
-            What Our Guests Say About Us ✨
+            What Our Guests Say About Us 
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             We take pride in providing unforgettable experiences for our guests. Here's what some of our happy travelers have to say about their journey with us.

@@ -40,35 +40,9 @@ export default function Header() {
             </Link>
 
             {/* Tours Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setIsToursDropdownOpen(true)}
-              onMouseLeave={() => setIsToursDropdownOpen(false)}
-            >
-              <button className="flex items-center text-white hover:text-[#F4B41A] font-medium">
-                 {t("navbar.desc2")} <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-
-              {isToursDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
-                  <Link to="/tours" className="block px-4 py-2 hover:bg-gray-100">
-                    All Tours
-                  </Link>
-                  <Link to="/tours?category=honeymoon" className="block px-4 py-2 hover:bg-gray-100">
-                    Honeymoon
-                  </Link>
-                  <Link to="/tours?category=family" className="block px-4 py-2 hover:bg-gray-100">
-                    Family Tours
-                  </Link>
-                  <Link to="/tours?category=adventure" className="block px-4 py-2 hover:bg-gray-100">
-                    Adventure
-                  </Link>
-                  <Link to="/tours?category=luxury" className="block px-4 py-2 hover:bg-gray-100">
-                    Luxury
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link to="/tours" className="text-white hover:text-[#F4B41A] font-medium">
+              {t("navbar.desc2")}
+            </Link>
 
             <Link to="/visa" className="text-white hover:text-[#F4B41A] font-medium">{t("navbar.desc3")}</Link>
             <Link to="/offers" className="text-white hover:text-[#F4B41A] font-medium">{t("navbar.desc4")}</Link>
