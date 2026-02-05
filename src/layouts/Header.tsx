@@ -90,12 +90,12 @@ export default function Header() {
             </div>
 
             {/* Notification Icon */}
-            <button
+            {/*<button
               onClick={() => navigate("/notifications")}
               className="text-white hover:text-[#F4B41A]"
             >
               <Bell className="h-5 w-5" />
-            </button>
+            </button>*/}
           </div>
 
           {/* Mobile Icons */}
@@ -135,12 +135,12 @@ export default function Header() {
             </div>
 
             {/* Mobile Notification */}
-            <button
+            {/*<button
               onClick={() => navigate("/notifications")}
               className="text-white"
             >
               <Bell className="h-5 w-5" />
-            </button>
+            </button>*/}
 
             {/* Hamburger */}
             <button
@@ -160,7 +160,7 @@ export default function Header() {
             <Link to="/" className="block text-white hover:text-[#F4B41A]">Home</Link>
             <Link to="/tours" className="block text-white hover:text-[#F4B41A]">Tours</Link>
             <Link to="/visa" className="block text-white hover:text-[#F4B41A]">Visa</Link>
-            <Link to="/offers" className="block text-white hover:text-[#F4B41A]">Offers</Link>
+            <Link to="/offers" className="block text-white hover:text-[#F4B41A]">Registration</Link>
             <Link to="/about" className="block text-white hover:text-[#F4B41A]">About</Link>
             <Link to="/gallery" className="block text-white hover:text-[#F4B41A]">Gallery</Link>
             <Link to="/contact" className="block text-white hover:text-[#F4B41A]">Contact</Link>

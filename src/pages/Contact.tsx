@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 import { useState } from 'react';
+import FAQSection from '../components/FAQSection';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -171,6 +172,33 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <FAQSection />
+
+      <section className="p-16 bg-[#0B1C2D]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Mail className="h-16 w-16 text-[#F4B41A] mx-auto mb-6" />
+          <h2 className="text-4xl font-bold text-white mb-4">Join Our Travel Community</h2>
+          <p className="text-gray-300 text-lg mb-8">
+            Subscribe to receive exclusive deals, travel tips, and destination guides
+          </p>
+
+          <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              className="flex-1 px-6 py-3 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:outline-none"
+            />
+            <button
+              type="submit"
+              className="bg-[#F4B41A] text-[#0B1C2D] px-8 py-3 rounded-lg font-bold hover:bg-[#e5a515] transition-colors whitespace-nowrap"
+            >
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </section>
+
     </div>
   );
 }

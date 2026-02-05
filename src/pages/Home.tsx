@@ -10,6 +10,7 @@ import logo from '../public/logo1.png'
 import ReviewsSection from '../components/ReviewsSection';
 import WhyChooseUsSection from '../components/WhyChooseUsSection';
 import StatsSection from '../components/StatsSection';
+import GallerySection from '../components/GallerySection';
 
 const experienceIcons: { [key: string]: React.ElementType } = {
   Waves,
@@ -299,6 +300,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <GallerySection/>
 
       <WhyChooseUsSection/>
 
