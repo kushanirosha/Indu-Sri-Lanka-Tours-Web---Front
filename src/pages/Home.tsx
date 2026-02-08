@@ -72,7 +72,7 @@ export default function Home() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#0B1C2D] via-[#0E7490] to-[#F4B41A] bg-clip-text text-transparent mb-3">
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#0B1C2D] via-[#0E7490] to-[#F4B41A] bg-clip-text text-transparent mb-3">
             Indu Sri Lanka Travels
           </h1>
 
@@ -80,15 +80,15 @@ export default function Home() {
 
           {/* Description */}
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p className="text-lg font-bold">
+            <p className="text-2xl font-bold">
               Welcome to Indu Sri Lanka Travels!
             </p>
 
-            <p>
+            <p className='text-lg'>
               Your trusted inbound and outbound travel agency with a remarkable 30-year legacy of excellence. We are your gateway to unforgettable journeys, specializing in Dambadiva tours and spiritual expeditions in the heart of Sri Lanka. With a deep-rooted commitment to providing immersive and spiritually enriching experiences, we invite you to embark on a voyage of discovery with us.
             </p>
 
-            <p>
+            <p className='text-lg'>
               Discover the sacred wonders of cultural and spiritual heritage on our outbound pilgrimage tours, where we take you on a transformative journey like no other. Join us as we explore the soul of these holy destinations, one pilgrimage at a time.
             </p>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
         </div>
       </section>*/}
 
-      <section className="py-24 mt-24">
+      <section className="py-24 mt-18">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Featured Group Tours</h2>

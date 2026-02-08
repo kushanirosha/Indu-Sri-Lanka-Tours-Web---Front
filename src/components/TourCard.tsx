@@ -53,11 +53,11 @@ export default function TourCard({ tour }: TourCardProps) {
         <div className="flex items-center justify-between">
           <div>
             <span className="text-2xl font-bold text-[#F4B41A]">
-              ${tour.discount ? tour.price * (1 - tour.discount / 100) : tour.price}
+              LKR {tour.discount ? tour.price * (1 - tour.discount / 100) : tour.price}
             </span>
             {tour.discount && (
               <span className="text-sm text-gray-400 line-through ml-2">
-                ${tour.price}
+                LKR {tour.price}
               </span>
             )}
             <p className="text-xs text-gray-500">per person</p>

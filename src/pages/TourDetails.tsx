@@ -64,7 +64,7 @@ export default function TourDetails() {
             <div className="bg-[#0B1C2D] text-white rounded-lg p-6 lg:w-80">
               <div className="mb-4">
                 <p className="text-gray-300 text-sm mb-1">Price per person</p>
-                <p className="text-4xl font-bold text-[#F4B41A]">${tour.price}</p>
+                <p className="text-4xl font-bold text-[#F4B41A]">LKR{tour.price}</p>
               </div>
 
               <div className="mb-4">
@@ -89,7 +89,7 @@ export default function TourDetails() {
               <div className="border-t border-gray-600 pt-4 mb-4">
                 <div className="flex justify-between text-lg">
                   <span>Total Price</span>
-                  <span className="font-bold text-[#F4B41A]">${totalPrice}</span>
+                  <span className="font-bold text-[#F4B41A]">LKR {totalPrice}</span>
                 </div>
               </div>
 

@@ -104,10 +104,10 @@ export default function Cart() {
 
                       <div className="text-right">
                         <p className="text-2xl font-bold text-[#F4B41A]">
-                          ${item.price * item.quantity}
+                          LKR{item.price * item.quantity}
                         </p>
                         <p className="text-xs text-gray-500">
-                          ${item.price} per person
+                          LKR{item.price} per person
                         </p>
                       </div>
                     </div>
@@ -132,16 +132,16 @@ export default function Cart() {
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Subtotal</span>
-                    <span className="font-semibold">${subtotal}</span>
+                    <span className="font-semibold">LKR{subtotal}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Tax (10%)</span>
-                    <span className="font-semibold">${tax.toFixed(2)}</span>
+                    <span className="font-semibold">LKR{tax.toFixed(2)}</span>
                   </div>
                   <div className="border-t pt-4 flex justify-between">
                     <span className="text-xl font-bold text-[#0B1C2D]">Total</span>
                     <span className="text-xl font-bold text-[#F4B41A]">
-                      ${total.toFixed(2)}
+                      LKR{total.toFixed(2)}
                     </span>
                   </div>
                 </div>
