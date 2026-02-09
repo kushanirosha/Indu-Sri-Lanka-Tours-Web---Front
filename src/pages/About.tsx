@@ -222,7 +222,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="bg-[#0B1C2D] text-white py-16">
+      <div className="bg-[#253d55] border-b border-gray-700 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Your Journey?</h2>
           <p className="text-gray-300 text-lg mb-8">

@@ -1,6 +1,7 @@
 import { Star } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import Google from '../public/google.webp';
 
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -82,7 +83,7 @@ const reviews = [
 
 const ReviewsSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0B1C2D] mb-4">
@@ -107,11 +108,10 @@ const ReviewsSection = () => {
             ★★★★★ Based on 92 reviews
           </p>
           <div className="flex items-center gap-2 mt-1">
-            <span className="text-blue-600 font-semibold">Google</span>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+              src= {Google}
               alt="Google"
-              className="h-6 w-6"
+              className="h-20 w-30"
             />
           </div>
         </div>

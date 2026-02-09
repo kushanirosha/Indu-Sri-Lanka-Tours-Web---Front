@@ -10,9 +10,14 @@ import {
   Users,
   ShoppingCart,
 } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function TourDetails() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { id } = useParams();
   const tour = tours.find((t) => t.id === id);
   const [travelers, setTravelers] = useState(1);

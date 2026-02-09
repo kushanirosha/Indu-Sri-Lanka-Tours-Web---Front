@@ -1,3 +1,16 @@
+import PD1 from "../public/Popularplaces/1.webp";
+import PD2 from "../public/Popularplaces/2.webp";
+import PD3 from "../public/Popularplaces/3.webp";
+import PD4 from "../public/Popularplaces/4.webp";
+import PD5 from "../public/Popularplaces/5.webp";
+import PD6 from "../public/Popularplaces/6.webp";
+import PD7 from "../public/Popularplaces/7.webp";
+import PD8 from "../public/Popularplaces/8.webp";
+import PD9 from "../public/Popularplaces/9.webp";
+import PD10 from "../public/Popularplaces/10.webp";
+import PD11 from "../public/Popularplaces/11.webp";
+import PD12 from "../public/Popularplaces/12.webp";
+
 export interface Tour {
   id: string;
   title: string;
@@ -45,73 +58,73 @@ export const popularDestinations: Locations[] = [
   {
     id: '1',
     name: 'Bodhgaya',
-    imageUrl: 'https://www.shoreexcursionsgroup.com/img/tour/ASGOBEACHBEERTOUR-2.jpg',
+    imageUrl: PD1,
     slug: 'goa-beaches',
   },
   {
     id: '2',
     name: 'Sarnath',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg',
+    imageUrl: PD2,
     slug: 'taj-mahal-agra',
   },
   {
     id: '3',
     name: 'Kushinagar',
-    imageUrl: 'https://www.pinkcityroyals.com/assets/images/jaipur-places-pics/Hawa_Mahal_jaipur_pinkcityroyals02.jpg',
+    imageUrl: PD3,
     slug: 'jaipur',
   },
   {
     id: '4',
     name: 'Lumbini',
-    imageUrl: 'https://mynatour.org/wp-content/uploads/2015/05/Houseboats_at_Kerala_Backwaters.jpg',
+    imageUrl: PD4,
     slug: 'kerala-backwaters',
   },
   {
     id: '5',
     name: 'Jetavana Monastery',
-    imageUrl: 'https://varanasismartcity.gov.in//assets/images/images/DashashwamedhGhat.jpg',
+    imageUrl: PD5,
     slug: 'varanasi',
   },
   {
     id: '6',
     name: 'Shravasti',
-    imageUrl: 'https://www.tmthpl.com/wp-content/uploads/2023/12/shimla-manali-budget-tour-package.jpg',
+    imageUrl: PD6,
     slug: 'manali',
   },
   {
     id: '7',
     name: 'Kapilavastu',
-    imageUrl: 'https://www.felixferiatravel.com/images/1736416900Leh_Ladakh_Image_(18).jpg',
+    imageUrl: PD7,
     slug: 'ladakh',
   },
   {
     id: '8',
     name: 'Vaishali',
-    imageUrl: 'https://adisheshyoga.com/blog/images/rishikesh-yoga-retreat-featured-06.webp',
+    imageUrl: PD8,
     slug: 'rishikesh',
   },
   {
     id: '9',
-    name: 'Udaipur Lakes',
-    imageUrl: 'https://udaipurtourism.co.in/images/places-to-visit/headers/lake-pichola-udaipur-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg',
+    name: 'Varanasi',
+    imageUrl: PD9,
     slug: 'udaipur',
   },
   {
     id: '10',
     name: 'Andaman Islands',
-    imageUrl: 'https://www.andamanislands.com/uploads/andamanislands/blog/main/5fa4011d9f7f4152_how_to_reach_the_andaman_islands.jpeg',
+    imageUrl: PD10,
     slug: 'andaman-islands',
   },
   {
     id: '11',
-    name: 'Darjeeling Tea',
-    imageUrl: 'https://teafloor.com/blog/wp-content/uploads/2021/04/Recipe-of-Darjeeling-Tea.jpeg',
+    name: 'Taj Mahal',
+    imageUrl: PD11,
     slug: 'darjeeling',
   },
   {
     id: '12',
     name: 'Ayodhya Ram Temple',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Ram_Janmbhoomi_Mandir%2C_Ayodhya_Dham.jpg', // placeholder - use better one
+    imageUrl: PD12, 
     slug: 'ayodhya',
   },
 ];
@@ -320,38 +333,54 @@ export const tours: Tour[] = [
     rating: 5,
     bestseller: true,
     featured: true,
+  },
+  {
+    id: 'tour-3',
+    title: 'Thailand Bangkok & Pattaya Tour',
+    destination: 'Bangkok, Pattaya, Coral Island, Ayutthaya',
+    country: 'Thailand',
+    duration: '06 Days / 05 Nights',
+    price: 249000,
+    image: 'https://cdn.forevervacation.com/uploads/blog/thailand-visitor-guide-things-to-do-4406.jpg',
+    description: 'Experience the perfect blend of vibrant city life, serene beaches, and ancient history with our 06 Days / 05 Nights Thailand Tour. From the bustling streets of Bangkok to the crystal-clear waters of Coral Island and the sacred ruins of Ayutthaya, this journey is designed for those seeking both adventure and spiritual enrichment. Enjoy a seamless travel experience provided by Indu Sri Lanka Tour Organization, featuring private speed boat tours, majestic temple visits, and world-class entertainment.',
+    highlights: [
+      'Coral Island Tour via private speed boat',
+      'Big Buddha Temple & Pattaya Viewpoint',
+      'Elephant & Cultural Shows with a Botanical Garden visit',
+      'Ayutthaya Ancient Kingdom exploration (UNESCO sites)',
+      'Chao Phraya River Cruise with international buffet and live music',
+      'Spiritual Visits to Wat Trimit, Wat Saket, and Dhammakaya Temple',
+      'Safari World & Marine Park adventure',
+      'Dedicated Shopping Day in Bangkok',
+    ],
+    includes: [
+      'Flight & Visa Assistance',
+      'Accommodation (05 Nights stay in comfortable hotels)',
+      'Private speed boat and air-conditioned vehicle transfers',
+      'Daily meals including International Buffet Cruise',
+      'Sightseeing entry tickets for all locations in itinerary',
+      'Tickets for Elephant and Cultural shows',
+    ],
+    excludes: [
+      'Personal Expenses (Laundry, Telephone, etc.)',
+      'Extra Drinks & Snacks',
+      'Travel Insurance',
+      'Tips for guides and drivers',
+    ],
+    itinerary: [
+      { day: 1, title: 'Arrival & Island Adventure', description: 'Arrival and transfer to Pattaya. Coral Island tour by private speed boat.' },
+      { day: 2, title: 'Pattaya Landmarks & Culture', description: 'Visit Big Buddha Temple and Pattaya Viewpoint. Gems Gallery Tram Ride. Elephant Show and Cultural Performances. Visit to the Botanical Garden.' },
+      { day: 3, title: 'Wildlife & Marine Life', description: 'Full day at Safari World & Marine Park.' },
+      { day: 4, title: 'Ancient Kingdom of Ayutthaya', description: 'Explore Ayutthaya Ancient Kingdom. Visit Wat Yai Chaimongkhon, Wat Phra Mahathat, Wat Lokayasutharam, and Wat Chaiwatthanaram. Visit Dhammakaya Temple.' },
+      { day: 5, title: 'Bangkok Temples & Dinner Cruise', description: 'City tour including Wat Traimit, Wat Saket, and Wat Pho. Evening Chao Phraya River Cruise with international buffet and live music.' },
+      { day: 6, title: 'Shopping & Departure', description: 'Free day for shopping in Bangkok malls and markets. Transfer to airport for departure.' },
+    ],
+    category: 'Leisure & Sightseeing',
+    rating: 5,
+    bestseller: true,
+    featured: true,
   }
-  //{
-  //  id: 'tour-3',
-  //  title: 'Romantic Bali Honeymoon',
-  //  destination: 'Ubud, Seminyak, Nusa Dua',
-  //  country: 'Indonesia',
-  //  duration: '7 Days / 6 Nights',
-  //  price: 1299,
-  //  image: 'https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=800',
-  //  description: 'Perfect honeymoon package with romantic settings, spa treatments, and private excursions.',
-  //  highlights: [
-  //    'Private villa with pool',
-  //    'Couples spa treatment',
-  //    'Candlelight dinner on beach',
-  //    'Rice terrace sunrise',
-  //    'Tanah Lot temple visit',
-  //  ],
-  //  includes: ['Luxury accommodation', 'Daily breakfast', 'Romantic dinners', 'Private tours', 'Spa sessions'],
-  //  excludes: ['International flights', 'Lunch', 'Additional activities', 'Travel insurance'],
-  //  itinerary: [
-  //    { day: 1, title: 'Arrival', description: 'Airport welcome, transfer to romantic villa.' },
-  //    { day: 2, title: 'Ubud Cultural Tour', description: 'Temples, monkey forest, and rice terraces.' },
-  //    { day: 3, title: 'Spa Day', description: 'Couples massage and relaxation.' },
-  //    { day: 4, title: 'Beach Day', description: 'Seminyak beach, shopping, and sunset.' },
-  //    { day: 5, title: 'Water Sports', description: 'Snorkeling and beach activities.' },
-  //    { day: 6, title: 'Tanah Lot', description: 'Temple visit and traditional dance.' },
-  //    { day: 7, title: 'Departure', description: 'Check out and airport transfer.' },
-  //  ],
-  //  category: 'Honeymoon',
-  //  rating: 5,
-  //  featured: true,
-  //},
+
   //{
   //  id: 'tour-4',
   //  title: 'Dubai Luxury Escape',

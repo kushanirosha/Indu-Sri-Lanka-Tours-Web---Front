@@ -1,8 +1,14 @@
 import { Check, FileText, Clock, Shield, Globe } from 'lucide-react';
 import { visaCountries } from '../data/travelData';
 import BookingStepsSection from '../components/BookingStepsSection';
+import { useEffect } from 'react';
 
 export default function Visa() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const steps = [
     {
       icon: FileText,
@@ -94,7 +100,7 @@ export default function Visa() {
         </div>
       </div>
 
-      <BookingStepsSection/>
+      <BookingStepsSection />
     </div>
   );
 }

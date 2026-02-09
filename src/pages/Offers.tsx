@@ -1,8 +1,14 @@
+import { useEffect } from 'react';
 import TourCard from '../components/TourCard';
 import { tours } from '../data/travelData';
 import { Tag } from 'lucide-react';
 
 export default function Offers() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const toursWithDiscounts = tours.map((tour, index) => {
     if (index % 3 === 0) {
       return { ...tour, discount: 20 };
@@ -13,16 +19,11 @@ export default function Offers() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <div className="bg-[#0B1C2D] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center mb-4">
-            <Tag className="h-12 w-12 text-[#F4B41A]" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-            Reserved Your seat
-          </h1>
-          <p className="text-gray-300 text-lg text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Reserved Your seat</h1>
+          <p className="text-gray-300 text-lg">
             Save big on your dream vacation with our exclusive deals
           </p>
         </div>
@@ -247,7 +248,7 @@ export default function Offers() {
         </div>
       </section>
 
-      <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20'>
         <div className="bg-[#0B1C2D] text-white rounded-lg p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Apply?</h2>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">

@@ -93,7 +93,7 @@ const GallerySection = () => {
           href="/book" // or your booking page/link
           className="
             inline-flex items-center gap-3
-            bg-blue-600 hover:bg-blue-700
+            bg-[#F4B41A] hover:bg-[#e5a515] hover:shadow-[#F4B41A]/30
             text-white font-semibold text-lg
             px-10 py-5 rounded-full shadow-xl
             transition-all duration-300 transform hover:scale-105 hover:shadow-2xl

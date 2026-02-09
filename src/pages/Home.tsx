@@ -11,6 +11,8 @@ import ReviewsSection from '../components/ReviewsSection';
 import WhyChooseUsSection from '../components/WhyChooseUsSection';
 import StatsSection from '../components/StatsSection';
 import GallerySection from '../components/GallerySection';
+import { useEffect } from 'react';
+import Img1 from '../public/Travel-in-Budget.webp';
 
 const experienceIcons: { [key: string]: React.ElementType } = {
   Waves,
@@ -23,6 +25,10 @@ const experienceIcons: { [key: string]: React.ElementType } = {
 export default function Home() {
   const featuredTours = tours.filter((tour) => tour.featured).slice(0, 6);
   const popularTours = tours.filter((tour) => tour.bestseller).slice(0, 4);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -149,7 +155,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               to="/tours"
-              className="inline-block bg-[#0B1C2D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#152d42] transition-colors"
+              className="inline-block bg-[#0B1C2D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#1f405e] transition-colors"
             >
               View All Tours
             </Link>
@@ -241,6 +247,13 @@ export default function Home() {
                 </li>
               </ul>
 
+              <a
+                href="/contact"
+                className="inline-block bg-[#F4B41A] text-[#0B1C2D] px-8 py-3 rounded-lg font-bold hover:bg-[#e5a515] transition-colors"
+              >
+                Contact Us Now
+              </a>
+
               {/* Budget Input + Button */}
               {/*<div className="mt-10 flex flex-col sm:flex-row gap-4 max-w-md">
                 <div className="relative flex-1">
@@ -278,9 +291,9 @@ export default function Home() {
             <div className="relative hidden lg:block">
               <div className="rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
                 <img
-                  src="https://ejournalz.com/wp-content/uploads/2017/04/Travel-in-Budget.png"
+                  src={Img1}
                   alt="Travel budget jar with money, compass and airplane"
-                  className="w-full h-auto object-cover"
+                  className="w-full  object-cover"
                 />
               </div>
 
@@ -293,7 +306,7 @@ export default function Home() {
           {/* Mobile image - shown only on smaller screens */}
           <div className="mt-12 lg:hidden">
             <img
-              src="https://ejournalz.com/wp-content/uploads/2017/04/Travel-in-Budget.png"
+              src={Img1}
               alt="Travel budget jar with money, compass and airplane"
               className="w-full rounded-2xl shadow-2xl object-cover border-4 border-white"
             />
@@ -301,11 +314,11 @@ export default function Home() {
         </div>
       </section>
 
-      <GallerySection/>
+      <GallerySection />
 
-      <WhyChooseUsSection/>
+      <WhyChooseUsSection />
 
-      <StatsSection/>
+      <StatsSection />
 
       {/*<section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -324,7 +337,7 @@ export default function Home() {
 
       <ReviewsSection />
 
-      <section className="py-16 bg-[#0B1C2D]">
+      <section className="py-16 bg-[#253d55] border-b border-gray-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Mail className="h-16 w-16 text-[#F4B41A] mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-white mb-4">Join Our Travel Community</h2>

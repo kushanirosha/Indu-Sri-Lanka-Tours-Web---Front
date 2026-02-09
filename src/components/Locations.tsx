@@ -50,7 +50,7 @@ const Locations = () => {
               className="!w-44 sm:!w-52 md:!w-60 lg:!w-64" // matches your original widths
             >
               <a
-                href={`/destinations/${dest.slug}`}
+                href={`/tours`}
                 className="block group"
               >
                 <div className="relative rounded-xl overflow-hidden shadow-md group-hover:shadow-xl transition-shadow duration-300">

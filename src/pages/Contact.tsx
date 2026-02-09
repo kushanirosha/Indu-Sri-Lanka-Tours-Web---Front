@@ -1,8 +1,13 @@
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import FAQSection from '../components/FAQSection';
 
 export default function Contact() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -175,7 +180,7 @@ export default function Contact() {
 
       <FAQSection />
 
-      <section className="p-16 bg-[#0B1C2D]">
+      <section className="p-16 bg-[#253d55] border-b border-gray-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Mail className="h-16 w-16 text-[#F4B41A] mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-white mb-4">Join Our Travel Community</h2>
