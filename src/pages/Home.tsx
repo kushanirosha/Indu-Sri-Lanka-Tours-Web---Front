@@ -13,6 +13,7 @@ import StatsSection from '../components/StatsSection';
 import GallerySection from '../components/GallerySection';
 import { useEffect } from 'react';
 import Img1 from '../public/Travel-in-Budget.webp';
+import Video from '../public/hero.mp4';
 
 const experienceIcons: { [key: string]: React.ElementType } = {
   Waves,
@@ -33,33 +34,48 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <section className="relative h-[700px] flex items-center justify-center">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Travel Hero"
+        <div className="absolute inset-0 overflow-hidden">
+
+          {/* Background Video */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full h-full object-cover"
-          />
+          >
+            <source src={Video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* Optional Overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1C2D]/80 to-[#0B1C2D]/60"></div>
+
         </div>
 
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl">
-          {/*<h2 className="text-sm md:text-base uppercase tracking-widest text-[#F4B41A] mb-4">
-            Welcome to Indu Sri Lanka Travel Organization
-          </h2>*/}
+        <div className="relative z-10 flex flex-col items-center text-center text-white px-4 max-w-4xl mx-auto">
 
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-            Discover Hidden Retreats Across
-            <span className="block bg-gradient-to-r from-[#F4B41A] to-[#FFD166] bg-clip-text text-transparent">
-              Asia’s Most Majestic Destinations
+          {/* Top Small Heading */}
+          <h2 className="text-xs md:text-sm lg:text-base uppercase tracking-[0.35em] text-blue-600 mb-5 font-semibold">
+            Welcome to Indu Sri Lanka Travel Organization
+          </h2>
+
+          {/* Main Heading */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+            සසර වසන තුරු - නිවන් දකින තුරු
+            <span className="block mt-2 bg-gradient-to-r from-blue-600 via-[#FFD166] to-blue-600 bg-clip-text text-transparent drop-shadow-lg">
+              දඹදිව වන්දනා
             </span>
           </h1>
 
-          <p className="text-base md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
-            From flights and hotels to visas and international tours, we take care of everything.
-            Enjoy stress-free travel with transparent pricing, expert planning, and unforgettable
-            experiences - specially designed for Sri Lankan travelers.
+          {/* Description */}
+          <p className="text-sm md:text-lg lg:text-xl text-gray-200 max-w-2xl mb-8">
+            Embark on a blissful spiritual voyage to the most revered Buddhist destinations,
+            guided with comfort, devotion, and unforgettable experiences.
           </p>
+
         </div>
+
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +94,7 @@ export default function Home() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#0B1C2D] via-[#0E7490] to-[#F4B41A] bg-clip-text text-transparent mb-3">
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#0B1C2D] via-[#0E7490] to-blue-600 bg-clip-text text-transparent mb-3">
             Indu Sri Lanka Travels
           </h1>
 
@@ -86,9 +102,9 @@ export default function Home() {
 
           {/* Description */}
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p className="text-2xl font-bold">
+            {/*<p className="text-2xl font-bold">
               Welcome to Indu Sri Lanka Travels!
-            </p>
+            </p>*/}
 
             <p className='text-lg'>
               Your trusted inbound and outbound travel agency with a remarkable 30-year legacy of excellence. We are your gateway to unforgettable journeys, specializing in Dambadiva tours and spiritual expeditions in the heart of Sri Lanka. With a deep-rooted commitment to providing immersive and spiritually enriching experiences, we invite you to embark on a voyage of discovery with us.
@@ -105,7 +121,7 @@ export default function Home() {
               href="/about"
               className="
           inline-block
-          bg-[#F4B41A] hover:bg-[#e5a515]
+          bg-blue-600 hover:bg-blue-800
           text-black font-bold
           text-lg px-12 py-3
           rounded-xl
@@ -140,7 +156,7 @@ export default function Home() {
       <section className="py-24 mt-18">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Featured Group Tours</h2>
+            <h2 className="text-4xl font-bold text-[#0B1C2D] mb-4">Dambadiva Pilgrimage Tours</h2>
             <p className="text-gray-600 text-lg">
               Explore our handpicked selection of amazing group tours
             </p>
@@ -202,7 +218,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80"></div>
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
                     {IconComponent && (
-                      <IconComponent className="h-12 w-12 mb-3 text-[#F4B41A]" />
+                      <IconComponent className="h-12 w-12 mb-3 text-blue-600" />
                     )}
                     <h3 className="text-xl font-bold text-center">{experience.name}</h3>
                   </div>
@@ -220,11 +236,11 @@ export default function Home() {
             {/* Left - Text Content */}
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1C2D] leading-tight">
-                Travel Within Your Budget –<br />
+                Travel Within Your Budget, <br />
                 Sri Lanka's Best Value International Tours
               </h2>
 
-              <div className="w-24 h-1 bg-[#F4B41A] rounded-full my-6"></div>
+              <div className="w-24 h-1 bg-blue-600 rounded-full my-6"></div>
 
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 Tell us how much you want to spend and we'll find the perfect international
@@ -232,24 +248,24 @@ export default function Home() {
                 money. Zero hidden costs guaranteed!
               </p>
 
-              <ul className="space-y-4 text-gray-800 text-lg">
-                <li className="flex items-center gap-3">
-                  <span className="text-green-600 text-2xl">✔</span>
+              <ul className="list-disc pl-6 space-y-3 text-gray-800">
+
+                <li>
                   Customized budget-friendly international options
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="text-green-600 text-2xl">✔</span>
+
+                <li>
                   Special deals within your price range
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="text-green-600 text-2xl">✔</span>
+
+                <li>
                   No hidden costs or surprise fees
                 </li>
               </ul>
 
               <a
                 href="/contact"
-                className="inline-block bg-[#F4B41A] text-[#0B1C2D] px-8 py-3 rounded-lg font-bold hover:bg-[#e5a515] transition-colors"
+                className="inline-block bg-blue-600 text-[#0B1C2D] px-8 py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors"
               >
                 Contact Us Now
               </a>
@@ -262,7 +278,7 @@ export default function Home() {
                     placeholder="500000"
                     className="
                 w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-full
-                focus:outline-none focus:border-[#F4B41A] focus:ring-2 focus:ring-[#F4B41A]/30
+                focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/30
                 placeholder-gray-500
               "
                   />
@@ -273,7 +289,7 @@ export default function Home() {
 
                 <button
                   className="
-              bg-[#F4B41A] hover:bg-[#e0a010] text-white font-semibold
+              bg-blue-600 hover:bg-[#e0a010] text-white font-semibold
               text-lg px-10 py-4 rounded-full shadow-lg
               transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl
               flex items-center justify-center gap-2 min-w-[140px]
@@ -298,7 +314,7 @@ export default function Home() {
               </div>
 
               {/* Optional decorative elements */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#F4B41A]/20 rounded-full blur-2xl" />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600/20 rounded-full blur-2xl" />
               <div className="absolute -top-6 -left-6 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl" />
             </div>
           </div>
@@ -339,7 +355,7 @@ export default function Home() {
 
       <section className="py-16 bg-[#253d55] border-b border-gray-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Mail className="h-16 w-16 text-[#F4B41A] mx-auto mb-6" />
+          <Mail className="h-16 w-16 text-blue-600 mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-white mb-4">Join Our Travel Community</h2>
           <p className="text-gray-300 text-lg mb-8">
             Subscribe to receive exclusive deals, travel tips, and destination guides
@@ -349,11 +365,11 @@ export default function Home() {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 px-6 py-3 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:outline-none"
+              className="flex-1 px-6 py-3 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none"
             />
             <button
               type="submit"
-              className="bg-[#F4B41A] text-[#0B1C2D] px-8 py-3 rounded-lg font-bold hover:bg-[#e5a515] transition-colors whitespace-nowrap"
+              className="bg-blue-600 text-[#0B1C2D] px-8 py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors whitespace-nowrap"
             >
               Subscribe Now
             </button>

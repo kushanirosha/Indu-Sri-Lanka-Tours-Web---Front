@@ -64,7 +64,7 @@ export default function Tours() {
           </p>
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className="lg:hidden flex items-center space-x-2 bg-[#F4B41A] text-[#0B1C2D] px-4 py-2 rounded-lg font-semibold"
+            className="lg:hidden flex items-center space-x-2 bg-blue-600 text-[#0B1C2D] px-4 py-2 rounded-lg font-semibold"
           >
             <SlidersHorizontal className="h-5 w-5" />
             <span>Filters</span>
@@ -91,7 +91,7 @@ export default function Tours() {
                     placeholder="Search destination"
                     value={filters.destination}
                     onChange={(e) => setFilters({ ...filters, destination: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   />
                 </div>
 
@@ -102,7 +102,7 @@ export default function Tours() {
                   <select
                     value={filters.category}
                     onChange={(e) => setFilters({ ...filters, category: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   >
                     <option value="">All Categories</option>
                     <option value="Honeymoon">Honeymoon</option>
@@ -124,14 +124,14 @@ export default function Tours() {
                       placeholder="Min"
                       value={filters.minPrice}
                       onChange={(e) => setFilters({ ...filters, minPrice: e.target.value })}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                     />
                     <input
                       type="number"
                       placeholder="Max"
                       value={filters.maxPrice}
                       onChange={(e) => setFilters({ ...filters, maxPrice: e.target.value })}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                     />
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function Tours() {
                   <select
                     value={filters.duration}
                     onChange={(e) => setFilters({ ...filters, duration: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   >
                     <option value="">Any Duration</option>
                     <option value="1-3">1-3 Days</option>
@@ -175,7 +175,7 @@ export default function Tours() {
                 <p className="text-gray-500 text-lg">No tours found matching your criteria.</p>
                 <button
                   onClick={resetFilters}
-                  className="mt-4 bg-[#F4B41A] text-[#0B1C2D] px-6 py-2 rounded-lg font-semibold hover:bg-[#e5a515] transition-colors"
+                  className="mt-4 bg-blue-600 text-[#0B1C2D] px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
                 >
                   Clear Filters
                 </button>

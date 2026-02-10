@@ -39,7 +39,7 @@ export default function Members() {
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                     placeholder="Enter your name"
                     required
                   />
@@ -57,7 +57,7 @@ export default function Members() {
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   placeholder="Enter your email"
                   required
                 />
@@ -74,7 +74,7 @@ export default function Members() {
                   type={showPassword ? 'text' : 'password'}
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+                  className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   placeholder="Enter your password"
                   required
                 />
@@ -94,7 +94,7 @@ export default function Members() {
                   <input type="checkbox" className="mr-2" />
                   <span className="text-sm text-gray-600">Remember me</span>
                 </label>
-                <a href="#" className="text-sm text-[#F4B41A] hover:text-[#e5a515]">
+                <a href="#" className="text-sm text-blue-600 hover:text-blue-800">
                   Forgot password?
                 </a>
               </div>
@@ -102,7 +102,7 @@ export default function Members() {
 
             <button
               type="submit"
-              className="w-full bg-[#F4B41A] text-[#0B1C2D] py-3 rounded-lg font-bold hover:bg-[#e5a515] transition-colors"
+              className="w-full bg-blue-600 text-[#0B1C2D] py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors"
             >
               {isLogin ? 'Sign In' : 'Create Account'}
             </button>
@@ -113,7 +113,7 @@ export default function Members() {
               {isLogin ? "Don't have an account? " : 'Already have an account? '}
               <button
                 onClick={() => setIsLogin(!isLogin)}
-                className="text-[#F4B41A] hover:text-[#e5a515] font-semibold"
+                className="text-blue-600 hover:text-blue-800 font-semibold"
               >
                 {isLogin ? 'Sign Up' : 'Sign In'}
               </button>

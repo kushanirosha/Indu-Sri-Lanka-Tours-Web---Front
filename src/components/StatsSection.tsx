@@ -1,7 +1,7 @@
 // src/components/StatsSection.tsx
 import { useEffect, useRef, useState } from 'react';
 import { Users, Globe, Trophy, Heart } from 'lucide-react';
-import Img2 from '../public/Bg-image.webp';
+import VideoBg from '../public/hero.mp4';
 
 const stats = [
   { value: 10000, label: 'Happy Travelers', icon: Users, suffix: '+' },
@@ -36,7 +36,7 @@ const StatsSection = () => {
   useEffect(() => {
     if (!isVisible) return;
 
-    const duration = 2200; // slightly longer for better feel
+    const duration = 2200;
     const steps = 60;
     const intervalTime = duration / steps;
 
@@ -64,16 +64,21 @@ const StatsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[480px] md:h-[500px] flex items-center justify-center overflow-hidden my-8 md:my-18"
+      className="relative h-[480px] md:h-[700px] flex items-center justify-center overflow-hidden my-8 md:my-18"
     >
-      {/* Background with parallax */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${Img2})`,
-          backgroundAttachment: 'fixed',
-        }}
-      >
+      {/* Background Video */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src={VideoBg} type="video/mp4" />
+        </video>
+
+        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-black/70" />
       </div>
 
@@ -91,7 +96,7 @@ const StatsSection = () => {
                 {/* Icon */}
                 <div className="mb-5 md:mb-6">
                   <Icon
-                    className="h-14 w-14 md:h-16 md:w-16 text-[#F4B41A] opacity-95"
+                    className="h-14 w-14 md:h-16 md:w-16 text-blue-600 opacity-95"
                     strokeWidth={1.8}
                   />
                 </div>
@@ -102,13 +107,12 @@ const StatsSection = () => {
                   {stat.suffix}
                 </div>
 
-                {/* Label + yellow bar */}
+                {/* Label */}
                 <div className="flex flex-col items-center">
                   <div className="text-lg md:text-xl font-semibold opacity-95 mb-3">
                     {stat.label}
                   </div>
-                  {/* Yellow bar */}
-                  <div className="h-1 w-16 md:w-20 bg-[#F4B41A] rounded-full opacity-90" />
+                  <div className="h-1 w-16 md:w-20 bg-blue-600 rounded-full opacity-90" />
                 </div>
               </div>
             );

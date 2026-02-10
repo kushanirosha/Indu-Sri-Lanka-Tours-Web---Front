@@ -61,7 +61,7 @@ const Locations = () => {
                     loading="lazy"
                   />
                 </div>
-                <p className="mt-3 text-center text-sm md:text-base font-medium text-[#0B1C2D] group-hover:text-[#F4B41A] transition-colors">
+                <p className="mt-3 text-center text-sm md:text-base font-medium text-[#0B1C2D] group-hover:text-blue-600 transition-colors">
                   {dest.name}
                 </p>
               </a>

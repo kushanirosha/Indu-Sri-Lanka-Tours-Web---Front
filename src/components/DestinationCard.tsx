@@ -23,7 +23,7 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
 
       <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
         <div className="flex items-center mb-2">
-          <MapPin className="h-5 w-5 mr-2 text-[#F4B41A]" />
+          <MapPin className="h-5 w-5 mr-2 text-blue-600" />
           <span className="text-sm font-medium">{destination.country}</span>
         </div>
         <h3 className="text-2xl font-bold mb-2">{destination.name}</h3>

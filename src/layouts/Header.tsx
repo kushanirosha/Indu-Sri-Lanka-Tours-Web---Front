@@ -48,7 +48,7 @@ export default function Header() {
             <Link
               to="/"
               className={`font-medium transition-colors ${
-                isActive("/") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc1")}
@@ -57,7 +57,7 @@ export default function Header() {
             <Link
               to="/tours"
               className={`font-medium transition-colors ${
-                isActive("/tours") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/tours") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc2")}
@@ -66,7 +66,7 @@ export default function Header() {
             <Link
               to="/visa"
               className={`font-medium transition-colors ${
-                isActive("/visa") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/visa") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc3")}
@@ -75,7 +75,7 @@ export default function Header() {
             <Link
               to="/offers"
               className={`font-medium transition-colors ${
-                isActive("/offers") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/offers") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc4")}
@@ -84,7 +84,7 @@ export default function Header() {
             <Link
               to="/about"
               className={`font-medium transition-colors ${
-                isActive("/about") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/about") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc5")}
@@ -93,7 +93,7 @@ export default function Header() {
             <Link
               to="/gallery"
               className={`font-medium transition-colors ${
-                isActive("/gallery") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/gallery") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc6")}
@@ -102,7 +102,7 @@ export default function Header() {
             <Link
               to="/contact"
               className={`font-medium transition-colors ${
-                isActive("/contact") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/contact") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc7")}
@@ -114,7 +114,7 @@ export default function Header() {
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center gap-1.5 text-white hover:text-[#F4B41A] transition-colors"
+                className="flex items-center gap-1.5 text-white hover:text-blue-600 transition-colors"
               >
                 <Globe className="h-4 w-4" />
                 {currentLang}
@@ -187,7 +187,7 @@ export default function Header() {
               to="/"
               onClick={() => setIsMenuOpen(false)}
               className={`block text-lg font-medium ${
-                isActive("/") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc1")}
@@ -197,7 +197,7 @@ export default function Header() {
               to="/tours"
               onClick={() => setIsMenuOpen(false)}
               className={`block text-lg font-medium ${
-                isActive("/tours") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/tours") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc2")}
@@ -207,7 +207,7 @@ export default function Header() {
               to="/visa"
               onClick={() => setIsMenuOpen(false)}
               className={`block text-lg font-medium ${
-                isActive("/visa") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/visa") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc3")}
@@ -217,7 +217,7 @@ export default function Header() {
               to="/offers"
               onClick={() => setIsMenuOpen(false)}
               className={`block text-lg font-medium ${
-                isActive("/offers") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/offers") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc4")}
@@ -227,7 +227,7 @@ export default function Header() {
               to="/about"
               onClick={() => setIsMenuOpen(false)}
               className={`block text-lg font-medium ${
-                isActive("/about") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/about") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc5")}
@@ -237,7 +237,7 @@ export default function Header() {
               to="/gallery"
               onClick={() => setIsMenuOpen(false)}
               className={`block text-lg font-medium ${
-                isActive("/gallery") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/gallery") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc6")}
@@ -247,7 +247,7 @@ export default function Header() {
               to="/contact"
               onClick={() => setIsMenuOpen(false)}
               className={`block text-lg font-medium ${
-                isActive("/contact") ? "text-[#F4B41A]" : "text-white hover:text-[#F4B41A]"
+                isActive("/contact") ? "text-blue-600" : "text-white hover:text-blue-600"
               }`}
             >
               {t("navbar.desc7")}

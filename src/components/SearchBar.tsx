@@ -30,13 +30,13 @@ export default function SearchBar() {
           <select
             value={searchParams.travelers}
             onChange={(e) => setSearchParams({ ...searchParams, travelers: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
           >
             <option value="">Select</option>
-            <option value="1">1 Person</option>
-            <option value="2">2 People</option>
-            <option value="3-4">3-4 People</option>
-            <option value="5+">5+ People</option>
+            <option value="1">Bodhgaya</option>
+            <option value="2">Sarnath</option>
+            <option value="3-4">Kushinagar</option>
+            <option value="5+">Lumbini</option>
           </select>
         </div>
 
@@ -47,7 +47,7 @@ export default function SearchBar() {
           <select
             value={searchParams.month}
             onChange={(e) => setSearchParams({ ...searchParams, month: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
           >
             <option value="">Any Month</option>
             <option value="jan">January</option>
@@ -72,14 +72,14 @@ export default function SearchBar() {
           <select
             value={searchParams.budget}
             onChange={(e) => setSearchParams({ ...searchParams, budget: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
           >
             <option value="">Any Budget</option>
-            <option value="0-500">Under $500</option>
-            <option value="500-1000">$500 - $1000</option>
-            <option value="1000-1500">$1000 - $1500</option>
-            <option value="1500-2000">$1500 - $2000</option>
-            <option value="2000+">$2000+</option>
+            <option value="0-500">Under LKR 200 000</option>
+            <option value="500-1000">LKR 200 000 - LKR 250 000</option>
+            <option value="1000-1500">LKR 250 000 - LKR 280 000</option>
+            <option value="1500-2000">LKR 280 000 - LKR 300 000</option>
+            <option value="2000+">LKR 300 000+</option>
           </select>
         </div>
 
@@ -90,7 +90,7 @@ export default function SearchBar() {
           <select
             value={searchParams.travelers}
             onChange={(e) => setSearchParams({ ...searchParams, travelers: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F4B41A] focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
           >
             <option value="">Select</option>
             <option value="1">1 Person</option>
@@ -104,7 +104,7 @@ export default function SearchBar() {
       <div className="mt-6 flex justify-center">
         <button
           type="submit"
-          className="bg-[#F4B41A] text-[#0B1C2D] px-12 py-3 rounded-lg font-bold hover:bg-[#e5a515] transition-colors flex items-center space-x-2 text-lg"
+          className="bg-blue-600 text-[#0B1C2D] px-12 py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors flex items-center space-x-2 text-lg"
         >
           <Search className="h-5 w-5" />
           <span>Search Tours</span>

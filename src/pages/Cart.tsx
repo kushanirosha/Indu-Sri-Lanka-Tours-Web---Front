@@ -59,7 +59,7 @@ export default function Cart() {
             <p className="text-gray-600 mb-8">Start exploring our amazing tours!</p>
             <Link
               to="/tours"
-              className="inline-block bg-[#F4B41A] text-[#0B1C2D] px-8 py-3 rounded-lg font-bold hover:bg-[#e5a515] transition-colors"
+              className="inline-block bg-blue-600 text-[#0B1C2D] px-8 py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors"
             >
               Browse Tours
             </Link>
@@ -103,7 +103,7 @@ export default function Cart() {
                       </div>
 
                       <div className="text-right">
-                        <p className="text-2xl font-bold text-[#F4B41A]">
+                        <p className="text-2xl font-bold text-blue-600">
                           LKR{item.price * item.quantity}
                         </p>
                         <p className="text-xs text-gray-500">
@@ -140,19 +140,19 @@ export default function Cart() {
                   </div>
                   <div className="border-t pt-4 flex justify-between">
                     <span className="text-xl font-bold text-[#0B1C2D]">Total</span>
-                    <span className="text-xl font-bold text-[#F4B41A]">
+                    <span className="text-xl font-bold text-blue-600">
                       LKR{total.toFixed(2)}
                     </span>
                   </div>
                 </div>
 
-                <button className="w-full bg-[#F4B41A] text-[#0B1C2D] py-3 rounded-lg font-bold hover:bg-[#e5a515] transition-colors mb-3">
+                <button className="w-full bg-blue-600 text-[#0B1C2D] py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors mb-3">
                   Proceed to Checkout
                 </button>
 
                 <Link
                   to="/tours"
-                  className="block text-center text-[#0B1C2D] hover:text-[#F4B41A] transition-colors"
+                  className="block text-center text-[#0B1C2D] hover:text-blue-600 transition-colors"
                 >
                   Continue Shopping
                 </Link>

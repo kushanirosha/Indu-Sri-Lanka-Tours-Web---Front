@@ -1,57 +1,46 @@
 import React, { useEffect, useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import Img1  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.37.33 (2).webp';
+import Img2  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.37.33.webp';
+import Img3  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.37.35.webp';
+import Img4  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.38.54 (2).webp';
+import Img5  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.38.54.webp';
+import Img6  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.43.24 (1).webp';
+import Img7  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.43.24.webp';
+import Img8  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.45.50 (1).webp';
+import Img9  from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.45.51 (2).webp';
+import Img10 from '../public/Gallery/WhatsApp Image 2026-02-07 at 15.45.51.webp';
+import Img11 from '../public/Gallery/WhatsApp Image 2026-02-07 at 16.57.14.webp';
+import Img12 from '../public/Gallery/WhatsApp Image 2026-02-07 at 16.57.25 (1).webp';
+import Img13 from '../public/Gallery/WhatsApp Image 2026-02-07 at 16.57.25.webp';
+import Img14 from '../public/Gallery/WhatsApp Image 2026-02-07 at 16.57.27.webp';
+import Img15 from '../public/Gallery/WhatsApp Image 2026-02-07 at 16.57.30 (2).webp';
+import Img16 from '../public/Gallery/WhatsApp Image 2026-02-07 at 16.57.30 (2) (1).webp';
+import Img17 from '../public/Gallery/WhatsApp Image 2026-02-07 at 17.01.06 (1).webp';
+import Img18 from '../public/Gallery/WhatsApp Image 2026-02-07 at 17.01.08.webp';
+import Img19 from '../public/Gallery/WhatsApp Image 2026-02-07 at 17.01.10.webp';
 
-// Sample images – replace with your real URLs or import from assets
+
 const galleryImages = [
-  {
-    id: 1,
-    src: 'https://images.unsplash.com/photo-1585208798174-6cedd78e0198?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-    alt: 'Sigiriya Rock Fortress at sunrise',
-    category: 'Cultural',
-  },
-  {
-    id: 2,
-    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-    alt: 'Temple of the Tooth',
-    category: 'Spiritual',
-  },
-  {
-    id: 3,
-    src: 'https://images.unsplash.com/photo-1622484212850-eb596d846862?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-    alt: 'Nine Arch Bridge',
-    category: 'Scenic',
-  },
-  {
-    id: 4,
-    src: 'https://images.unsplash.com/photo-1569520652356-2c0a0c6e5d2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-    alt: 'Adam’s Peak pilgrimage',
-    category: 'Pilgrimage',
-  },
-  {
-    id: 5,
-    src: 'https://images.unsplash.com/photo-1590523277543-a94c8a96d26f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-    alt: 'Yala National Park safari',
-    category: 'Wildlife',
-  },
-  {
-    id: 6,
-    src: 'https://images.unsplash.com/photo-1625504611841-8a0e6d8e3c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-    alt: 'Mirissa beach sunset',
-    category: 'Beach',
-  },
-  {
-    id: 7,
-    src: 'https://images.unsplash.com/photo-1585506946482-9e6a8d0f6d6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-    alt: 'Kandy Lake and Temple',
-    category: 'Cultural',
-  },
-  {
-    id: 8,
-    src: 'https://images.unsplash.com/photo-1599669454699-248893623440?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-    alt: 'Ella train journey',
-    category: 'Scenic',
-  },
-  // Add more images as needed (10–20 recommended)
+  { id: 1,  src: Img1,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 2,  src: Img2,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 3,  src: Img3,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 4,  src: Img4,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 5,  src: Img5,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 6,  src: Img6,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 7,  src: Img7,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 8,  src: Img8,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 9,  src: Img9,  alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 10, src: Img10, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 11, src: Img11, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 12, src: Img12, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 13, src: Img13, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 14, src: Img14, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 15, src: Img15, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 16, src: Img16, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 17, src: Img17, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 18, src: Img18, alt: 'Indian Pilgrimage', category: 'India' },
+  { id: 19, src: Img19, alt: 'Indian Pilgrimage', category: 'India' },
 ];
 
 const Gallery = () => {
@@ -138,7 +127,7 @@ const Gallery = () => {
       {/* Lightbox Modal */}
       {selectedImage !== null && (
         <div
-          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
           onClick={closeLightbox}
         >
           <button

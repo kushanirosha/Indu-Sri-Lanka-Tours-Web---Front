@@ -20,7 +20,7 @@ const TopBar = () => {
             <span
               className="
                 text-xl md:text-2xl font-extrabold
-                bg-gradient-to-r from-[#0B1C2D] via-[#0E7490] to-[#F4B41A]
+                bg-gradient-to-r from-[#0B1C2D] via-[#0E7490] to-blue-600
                 bg-clip-text text-transparent
                 tracking-wide
               "

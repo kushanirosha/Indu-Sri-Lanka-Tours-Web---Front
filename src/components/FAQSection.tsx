@@ -76,7 +76,7 @@ const FAQSection = () => {
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1C2D]">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0B1C2D]">
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg text-gray-600">
@@ -95,10 +95,10 @@ const FAQSection = () => {
                 className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
               >
                 <div className="flex items-center gap-4">
-                  <span className="text-xl md:text-2xl font-bold text-[#F4B41A] min-w-[40px]">
+                  <span className="text-xl md:text-2xl font-bold text-blue-600 min-w-[40px]">
                     {faq.id}
                   </span>
-                  <span className="text-lg md:text-xl font-medium text-gray-800">
+                  <span className="text-md md:text-lg font-medium text-gray-800">
                     {faq.question}
                   </span>
                 </div>

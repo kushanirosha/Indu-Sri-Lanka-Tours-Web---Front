@@ -29,7 +29,7 @@ export default function Destination() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0B1C2D]/90 to-[#0B1C2D]/60"></div>
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="flex items-center text-[#F4B41A] mb-4">
+            <div className="flex items-center text-blue-600 mb-4">
               <MapPin className="h-6 w-6 mr-2" />
               <span className="text-lg font-medium">{destination.country}</span>
             </div>
@@ -53,7 +53,7 @@ export default function Destination() {
               {destinationTours.length} tours available in {destination.name}
             </p>
           </div>
-          <button className="flex items-center space-x-2 bg-[#F4B41A] text-[#0B1C2D] px-6 py-3 rounded-lg font-semibold hover:bg-[#e5a515] transition-colors">
+          <button className="flex items-center space-x-2 bg-blue-600 text-[#0B1C2D] px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
             <Download className="h-5 w-5" />
             <span>Download Brochure</span>
           </button>

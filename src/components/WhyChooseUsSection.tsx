@@ -28,13 +28,13 @@ const WhyChooseUsSection = () => {
           <div className={`
             group relative bg-white rounded-2xl shadow-md border border-gray-100 
             p-8 md:p-9 overflow-hidden transition-all duration-300
-            hover:shadow-xl hover:-translate-y-2 hover:border-[#F4B41A]/30
+            hover:shadow-xl hover:-translate-y-2 hover:border-blue-600/30
           `}>
-            <div className="absolute -right-6 -top-6 w-24 h-24 bg-[#F4B41A]/10 rounded-full blur-xl group-hover:bg-[#F4B41A]/20 transition-colors" />
+            <div className="absolute -right-6 -top-6 w-24 h-24 bg-blue-600/10 rounded-full blur-xl group-hover:bg-blue-600/20 transition-colors" />
             
             <div className="relative z-10 text-center">
               <Award 
-                className="mx-auto mb-5 h-16 w-16 md:h-20 md:w-20 text-[#F4B41A] transition-transform group-hover:scale-110 duration-300" 
+                className="mx-auto mb-5 h-16 w-16 md:h-20 md:w-20 text-blue-600 transition-transform group-hover:scale-110 duration-300" 
                 strokeWidth={1.5} 
               />
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
@@ -50,13 +50,13 @@ const WhyChooseUsSection = () => {
           <div className={`
             group relative bg-white rounded-2xl shadow-md border border-gray-100 
             p-8 md:p-9 overflow-hidden transition-all duration-300
-            hover:shadow-xl hover:-translate-y-2 hover:border-[#F4B41A]/30
+            hover:shadow-xl hover:-translate-y-2 hover:border-blue-600/30
           `}>
-            <div className="absolute -right-6 -top-6 w-24 h-24 bg-[#F4B41A]/10 rounded-full blur-xl group-hover:bg-[#F4B41A]/20 transition-colors" />
+            <div className="absolute -right-6 -top-6 w-24 h-24 bg-blue-600/10 rounded-full blur-xl group-hover:bg-blue-600/20 transition-colors" />
             
             <div className="relative z-10 text-center">
               <Globe 
-                className="mx-auto mb-5 h-16 w-16 md:h-20 md:w-20 text-[#F4B41A] transition-transform group-hover:scale-110 duration-300" 
+                className="mx-auto mb-5 h-16 w-16 md:h-20 md:w-20 text-blue-600 transition-transform group-hover:scale-110 duration-300" 
                 strokeWidth={1.5} 
               />
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
@@ -72,13 +72,13 @@ const WhyChooseUsSection = () => {
           <div className={`
             group relative bg-white rounded-2xl shadow-md border border-gray-100 
             p-8 md:p-9 overflow-hidden transition-all duration-300
-            hover:shadow-xl hover:-translate-y-2 hover:border-[#F4B41A]/30
+            hover:shadow-xl hover:-translate-y-2 hover:border-blue-600/30
           `}>
-            <div className="absolute -right-6 -top-6 w-24 h-24 bg-[#F4B41A]/10 rounded-full blur-xl group-hover:bg-[#F4B41A]/20 transition-colors" />
+            <div className="absolute -right-6 -top-6 w-24 h-24 bg-blue-600/10 rounded-full blur-xl group-hover:bg-blue-600/20 transition-colors" />
             
             <div className="relative z-10 text-center">
               <ShieldCheck 
-                className="mx-auto mb-5 h-16 w-16 md:h-20 md:w-20 text-[#F4B41A] transition-transform group-hover:scale-110 duration-300" 
+                className="mx-auto mb-5 h-16 w-16 md:h-20 md:w-20 text-blue-600 transition-transform group-hover:scale-110 duration-300" 
                 strokeWidth={1.5} 
               />
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
@@ -94,13 +94,13 @@ const WhyChooseUsSection = () => {
           <div className={`
             group relative bg-white rounded-2xl shadow-md border border-gray-100 
             p-8 md:p-9 overflow-hidden transition-all duration-300
-            hover:shadow-xl hover:-translate-y-2 hover:border-[#F4B41A]/30
+            hover:shadow-xl hover:-translate-y-2 hover:border-blue-600/30
           `}>
-            <div className="absolute -right-6 -top-6 w-24 h-24 bg-[#F4B41A]/10 rounded-full blur-xl group-hover:bg-[#F4B41A]/20 transition-colors" />
+            <div className="absolute -right-6 -top-6 w-24 h-24 bg-blue-600/10 rounded-full blur-xl group-hover:bg-blue-600/20 transition-colors" />
             
             <div className="relative z-10 text-center">
               <Zap 
-                className="mx-auto mb-5 h-16 w-16 md:h-20 md:w-20 text-[#F4B41A] transition-transform group-hover:scale-110 duration-300" 
+                className="mx-auto mb-5 h-16 w-16 md:h-20 md:w-20 text-blue-600 transition-transform group-hover:scale-110 duration-300" 
                 strokeWidth={1.5} 
               />
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">

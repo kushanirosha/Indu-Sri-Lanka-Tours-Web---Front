@@ -8,12 +8,12 @@ const BookingStepsSection = () => {
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
           <div className="inline-flex items-center gap-3 mb-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
               Book Your Journey in Just 3 Easy Steps
             </h2>
             {/*<div className="relative">
-              <span className="text-5xl md:text-6xl font-black text-[#F4B41A]/30">3</span>
-              <div className="absolute -top-1 -right-3 w-8 h-8 bg-[#F4B41A]/20 rounded-full blur-sm"></div>
+              <span className="text-5xl md:text-6xl font-black text-blue-600/30">3</span>
+              <div className="absolute -top-1 -right-3 w-8 h-8 bg-blue-600/20 rounded-full blur-sm"></div>
             </div>*/}
           </div>
           
@@ -26,11 +26,11 @@ const BookingStepsSection = () => {
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {/* Step 1 */}
           <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100">
-            <div className="h-2 bg-gradient-to-r from-[#F4B41A] to-amber-500"></div>
+            <div className="h-2 bg-gradient-to-r from-blue-600 to-amber-500"></div>
             
             <div className="p-8 md:p-10 text-center">
-              <div className="mx-auto mb-6 w-20 h-20 rounded-full bg-[#F4B41A]/10 flex items-center justify-center group-hover:bg-[#F4B41A]/20 transition-colors">
-                <Search className="w-10 h-10 text-[#F4B41A]" strokeWidth={2.5} />
+              <div className="mx-auto mb-6 w-20 h-20 rounded-full bg-blue-600/10 flex items-center justify-center group-hover:bg-blue-600/20 transition-colors">
+                <Search className="w-10 h-10 text-blue-600" strokeWidth={2.5} />
               </div>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -100,7 +100,7 @@ const BookingStepsSection = () => {
         {/* Optional trust line at bottom */}
         <div className="text-center mt-12 text-gray-500 text-sm md:text-base">
           <p className="inline-flex items-center gap-2">
-            <span className="text-green-600">✓</span> Secure booking • No hidden fees • 24/7 support
+            <span className="text-green-600"></span> • Secure booking • No hidden fees • 24/7 support
           </p>
         </div>
       </div>
